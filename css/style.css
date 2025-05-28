@@ -373,7 +373,7 @@ li {
 .about-wrap__body__list {
   background-color: #fff;
   text-align: left;
-  padding: 0 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   width: 80%;
   margin: 20px auto 0 auto;
 }
@@ -385,21 +385,21 @@ li {
   font-size: 20px;
   line-height: 1.6;
   justify-content: center;
-  text-align: left;
+  text-align: center;
 }
 .list__inner {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  flex-shrink: 0;
-  margin: 0 auto;
+  display: flex; /* 縦方向に配置 */
+  justify-content: center; /* 縦中央揃え */
+  align-items: center; /* 横中央揃え */
+  text-align: center; /* テキスト中央 */
+  height: 100%;
+  width: 100%;
 }
 .list__inner p {
-  width: 70%;
+  width: 50%;
   font-size: 20px;
   line-height: 1.6;
+  text-align: left;
 }
 .num {
   width: 5%;
@@ -413,6 +413,7 @@ li {
   color: #023e7c;
   font-size: 20px;
   line-height: 1.6;
+  text-align: center;
   justify-content: center;
 }
 .about-wrap__body__list__items strong {
@@ -502,10 +503,12 @@ li {
 }
 .treatment-wrap__body__block__right1 {
   width: 42%;
+  height: auto;
 }
 .treatment-wrap__body__block__right1__img {
+  aspect-ratio: 16 / 9;
   width: 100%;
-  height: 310px;
+  height: 100%;
   display: flex;
   justify-content: center; /* 横中央揃え */
   align-items: center;
@@ -513,15 +516,17 @@ li {
 .treatment-wrap__body__block__right1__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 切り抜きながらフィット（トリミング風） */
+  object-fit: cover; /* 親にぴったりにして、切り取る */
   display: block;
 }
 .treatment-wrap__body__block__left2 {
   width: 42%;
+  height: auto;
 }
 .treatment-wrap__body__block__left2__img {
+  aspect-ratio: 16 / 9;
   width: 100%;
-  height: 310px;
+  height: 100%;
   display: flex;
   justify-content: center; /* 横中央揃え */
   align-items: center;
@@ -899,7 +904,7 @@ a {
   color: #fff;
   width: 35%;
   padding: 1%;
-  font-size: clamp(1rem, 0.875rem + 0.625vw, 1.375rem);
+  font-size: clamp(1.125rem, 0.9919rem + 0.3226vw, 1.25rem);
   text-align: left;
   font-weight: lighter;
   border: #000 solid 1px;
@@ -907,7 +912,7 @@ a {
 .fee-wrap__body__table td {
   width: 65%;
   padding: 1%;
-  font-size: clamp(1rem, 0.875rem + 0.625vw, 1.375rem);
+  font-size: clamp(1.125rem, 0.9919rem + 0.3226vw, 1.25rem);
   border: #000 solid 1px;
 }
 .fee-wrap__body__table__note {
@@ -964,7 +969,7 @@ a {
   color: #023e7c;
 }
 .fee-wrap__body__about__txt {
-  font-size: clamp(1rem, 0.875rem + 0.625vw, 1.375rem);
+  font-size: clamp(1.125rem, 0.9919rem + 0.3226vw, 1.25rem);
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -1389,7 +1394,7 @@ input[name="name05"] {
 .form-wrap__mes label {
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 .form-wrap__block__btn {
