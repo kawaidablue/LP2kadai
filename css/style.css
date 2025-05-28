@@ -208,21 +208,36 @@ body {
   margin: 0 auto;
 }
 .contact-wrap__body {
+  width: 90%;
   display: flex;
-  margin-top: 20px;
   justify-content: center; /* 横中央 */
   align-items: flex-start;
+  margin: 20px auto 0 auto;
+  gap: 5%;
 }
 .contact-wrap__body__left {
-  width: 43%;
-  margin: 0 auto;
+  width: 40%;
+  margin: 0;
 }
 .contact-wrap__body__left__block {
+  width: 100%;
+  height: 100%;
+  background-color: #023e7c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #0f79c4;
-  padding: 20px 20px 20px 20px;
+}
+.contact-wrap__body__left__block a {
+  justify-content: center;
+  width: 100%;
+  display: block;
+  height: 100%;
+  padding: 5% 0;
 }
 .contact-wrap__body__left p {
-  font-size: clamp(1.5rem, 1.1008rem + 0.9677vw, 1.875rem);
+  font-size: clamp(1.25rem, 1.0294rem + 0.5882vw, 1.5rem);
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
@@ -235,15 +250,25 @@ body {
   font-size: clamp(2.1875rem, 2.1rem + 1.75vw, 4.0625rem);
 }
 .contact-wrap__body__right {
-  width: 43%;
-  margin: 0 auto;
+  width: 40%;
+  margin: 0;
 }
 .contact-wrap__body__right__block {
   background-color: #fff;
-  padding: 20px 20px 20px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-wrap__body__right__block a {
+  width: 100%;
+  display: block;
+  height: 100%;
+  padding: 5% 0;
 }
 .contact-wrap__body__right__block p {
-  font-size: clamp(1.5rem, 1.1008rem + 0.9677vw, 1.875rem);
+  font-size: clamp(1.25rem, 1.0294rem + 0.5882vw, 1.5rem);
   font-weight: bold;
   text-align: center;
   color: #023e7c;
@@ -287,7 +312,7 @@ body {
   padding: 20px 10px 10px 10px;
 }
 .worry-wrap__body__list__item {
-  font-size: 22px;
+  font-size: clamp(1.125rem, 0.2321rem + 1.4286vw, 1.375rem);
   width: 43%;
   padding: 2% 0 2% 0;
   border-bottom: 2px dotted #023e7c;
@@ -296,7 +321,7 @@ body {
   text-indent: -1em;
 }
 .worry-wrap__body__list__items {
-  font-size: 22px;
+  font-size: clamp(1.125rem, 0.2321rem + 1.4286vw, 1.375rem);
   width: 43%;
   padding: 2% 0 2% 0;
   font-weight: bold;
@@ -365,9 +390,9 @@ li {
   margin: 40px auto;
   padding: 20px;
 }
-.about-wrap__body__head {
+.about-wrap__body__head p {
   color: #0f79c4;
-  font-size: 36px;
+  font-size: clamp(1.625rem, 0.5833rem + 2.0833vw, 2.25rem);
   font-weight: bold;
 }
 .about-wrap__body__list {
@@ -1101,7 +1126,7 @@ a {
   width: 40%;
   background-color: #fff;
   border: #000 solid 1px;
-  font-size: clamp(1rem, 0.875rem + 0.625vw, 1.375rem);
+  font-size: clamp(1rem, 0.7917rem + 0.4167vw, 1.125rem);
 }
 .gr__under__right__head {
   background-color: #023e7c;
@@ -1109,7 +1134,7 @@ a {
   border: #000 solid 1px;
 }
 .gr__under__right__head h5 {
-  font-size: clamp(1rem, 0.875rem + 0.625vw, 1.375rem);
+  font-size: clamp(1rem, 0.7917rem + 0.4167vw, 1.125rem);
   color: #fff;
   font-weight: bold;
   padding-left: 2%;
@@ -1117,7 +1142,7 @@ a {
 .gr__under__right__item__list {
   position: relative;
   padding-bottom: 1%;
-  font-size: 18px;
+  font-size: clamp(1rem, 0.7917rem + 0.4167vw, 1.125rem);
 }
 .gr__under__right__item {
   padding: 4%;
@@ -1245,7 +1270,6 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
   margin-bottom: 40px;
 }
 .Q-wrap__body__head__block {
@@ -1253,7 +1277,7 @@ a {
   width: 28%;
   height: 100%;
   background-image: url(../img/dropped-image\ 1.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   padding: 80px 20px;
@@ -1291,7 +1315,7 @@ a {
   color: #fff;
 }
 .Q-wrap__body__block__table__head__txt p {
-  font-size: 25px;
+  font-size: clamp(1.375rem, 1.0625rem + 0.625vw, 1.5625rem);
   font-weight: bold;
   width: 90%;
   padding: 2%;
@@ -1416,7 +1440,6 @@ input[name="name05"] {
   cursor: pointer; /* ホバー時にポインター */
   transition: all 0.3s; /* なめらかな変化 */
 }
-
 .form-wrap__block__btn button:hover {
   background-color: #c0e6ff;
   border: #000 solid 1px; /* ホバー時の色 */
@@ -1482,7 +1505,7 @@ input[name="name05"] {
   font-size: 24px;
 }
 .footer-wrap__body__left__address {
-  font-size: 24px;
+  font-size: 20px;
 }
 .footer-wrap__body__right {
   width: 45%;
@@ -1559,7 +1582,8 @@ input[name="name05"] {
 
 /* チェックボックスと送信ボタン */
 .form-wrap__mes {
-  margin-top: 20px;
+  width: 80%;
+  margin: 20px auto;
   font-size: 0.95rem;
   color: #000;
   line-height: 1.6;
@@ -1579,17 +1603,19 @@ input[name="name05"] {
   .about-wrap {
     width: 90%;
   }
-  .about-wrap__body__head p {
-    font-size: 32px;
-  }
   .__inner {
     padding: 40px 0 40px 0;
   }
   .flow-wrap__body__block__txt {
     font-size: 16px;
   }
+  .worry-wrap__ttl h2 {
+    font-size: clamp(2rem, 1.1176rem + 2.3529vw, 3rem);
+    padding-bottom: 20px;
+    text-align: center;
+  }
   .top {
-    height: 40vh;
+    height: 65vh;
   }
   .treatment-wrap__body__block {
     margin: 40px auto;
@@ -1599,6 +1625,7 @@ input[name="name05"] {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
   .treatment-wrap__body__block__right2__head strong {
     font-size: 110px;
@@ -1647,7 +1674,9 @@ input[name="name05"] {
     gap: 0;
     padding: 0;
   }
-
+  .gr-wrap__left__name {
+    margin-bottom: 20px;
+  }
   .gr-wrap__right__img {
     position: static;
     width: 60%;
@@ -1671,7 +1700,9 @@ input[name="name05"] {
   .gr-wrap__left {
     width: 80%;
   }
-
+  .contact-wrap__body {
+    width: 100%;
+  }
   .gr-wrap__right {
     width: 90%;
     order: -1;
@@ -1709,15 +1740,28 @@ input[name="name05"] {
     /* 背景だけ透過 */
     z-index: -1; /* 背面へ */
   }
+  .gr__under {
+    width: 90%;
+  }
   .treatment-wrap__body__block__left2__img img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* 切り抜きながらフィット（トリミング風） */
     display: block;
   }
+  .Q-wrap__body__head {
+    gap: 20px;
+  }
+  .Q-wrap__body__head__block {
+    font-size: 22px;
+    width: 30%;
+  }
   .fee-wrap__body__about__txt {
     font-size: 18px;
     width: 100%;
+  }
+  .reason-wrap {
+    padding: 40px 0 0 0;
   }
   .reason-wrap__body__block1__txt {
     font-size: 20px;
@@ -1763,6 +1807,18 @@ input[name="name05"] {
   .form-wrap__mes label {
     font-size: 18px;
   }
+  .case-wrap__body__btn {
+    width: 25%;
+    padding: 3%;
+  }
+  .case-wrap__body__btn a {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .treatment-wrap__body__block__left1__head {
+    font-size: clamp(1.6875rem, 0.125rem + 3.125vw, 2.625rem);
+  }
   .treatment-wrap__body__block__left1__head strong {
     font-size: 80px;
     color: #c0e6ff;
@@ -1770,6 +1826,9 @@ input[name="name05"] {
     vertical-align: baseline; /* or text-bottom */
     line-height: 1;
     width: 30%;
+  }
+  .treatment-wrap__body__block__right2__head {
+    font-size: clamp(1.6875rem, 0.125rem + 3.125vw, 2.625rem);
   }
   .treatment-wrap__body__block__right2__head strong {
     font-size: 80px;
@@ -1779,10 +1838,28 @@ input[name="name05"] {
     line-height: 1;
     width: 30%;
   }
+  .form-wrap__block__btn button {
+    width: 25%; /* 横幅 */
+    height: 90px; /* 高さ */
+    font-size: 24px; /* 文字サイズ */
+    background-color: #fff; /* 背景色（例：青） */
+    color: #023e7c; /* 文字色 */
+    font-weight: bold;
+    border: #000 solid 1px; /* 枠線なし */
+    border-radius: 20px; /* 角丸 */
+    cursor: pointer; /* ホバー時にポインター */
+    transition: all 0.3s; /* なめらかな変化 */
+  }
+  .footer-wrap__body__right__table th {
+    font-size: clamp(1.25rem, 0.8333rem + 0.8333vw, 1.5rem);
+  }
+  .footer-wrap__body__right__table td {
+    font-size: clamp(1.25rem, 0.8333rem + 0.8333vw, 1.5rem);
+  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .__inner {
-    padding: 40px 0 40px 0;
+    padding: 20px 0 20px 0;
   }
   .h-open {
     position: absolute;
@@ -2179,10 +2256,10 @@ input[name="name05"] {
     background-repeat: no-repeat;
     background-position: center;
     font-size: 16px;
-    width: 42%;
+    width: 32%;
     height: 100%;
-    padding: 10px;
     margin: 0;
+    padding: 20px;
   }
   .Q-wrap__body__block {
     width: 100%;
@@ -2220,6 +2297,7 @@ input[name="name05"] {
     font-size: 16px;
   }
   .footer-wrap__body__right__table th {
+    font-size: clamp(0.875rem, 0.4375rem + 2vw, 1.25rem);
     background-color: #023e7c;
     color: #fff;
     text-align: left;
@@ -2231,6 +2309,7 @@ input[name="name05"] {
     font-weight: bold;
   }
   .footer-wrap__body__right__table td {
+    font-size: clamp(0.875rem, 0.4375rem + 2vw, 1.25rem);
     background-color: #023e7c;
     color: #fff;
     text-align: left;
@@ -2323,7 +2402,7 @@ input[name="name05"] {
     /* 背景だけ透過 */
     z-index: -1; /* 背面へ */
   }
-  .gr-wrap__left__name {
+  .gr-wrap__left__name p {
     font-size: 30px;
     color: #000;
     font-weight: bold;
@@ -2429,11 +2508,14 @@ input[name="name05"] {
   #h-nav li {
     position: relative;
     border-bottom: dotted 1.5px #023e7c;
-    margin: 20% 0;
+    margin: 10% 0;
+  }
+  #h-nav li a {
+    font-size: 14px;
   }
   #h-nav ul {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     z-index: 200000;
     transform: translateY(-50%) translateX(-50%);
@@ -2458,7 +2540,11 @@ input[name="name05"] {
     padding: 10px;
   }
   .footer-wrap__body__left__tel p {
-    font-size: 28px;
+    font-size: 24px;
+  }
+  .footer-wrap__logo span {
+    font-size: 16px;
+    padding: 10px;
   }
   .mes-wrap__ttl {
     text-align: center;
@@ -2528,8 +2614,11 @@ input[name="name05"] {
   }
   .list__inner {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     align-items: center;
+  }
+  .list__inner p {
+    width: 80%;
   }
   .list__inner .num {
     width: 20%;
