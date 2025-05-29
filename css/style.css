@@ -1629,7 +1629,7 @@ input[name="name05"] {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    gap: 10px;
   }
   .treatment-wrap__body__block__right2__head strong {
     font-size: 110px;
@@ -1665,7 +1665,7 @@ input[name="name05"] {
   }
   .treatment-wrap__body__block__left1__txt {
     align-items: center;
-    line-height: 1.8;
+    line-height: 1.5;
   }
   .treatment-wrap__body__block__left2__img {
     width: 100%;
@@ -1770,7 +1770,7 @@ input[name="name05"] {
   }
   .reason-wrap__body__block1__txt {
     font-size: 20px;
-    line-height: 1.8;
+    line-height: 1.6;
   }
   .reason-wrap__body__block2__txt {
     font-size: 20px;
@@ -1787,7 +1787,7 @@ input[name="name05"] {
   }
   .treatment-wrap__body__block__right2__txt {
     align-items: center;
-    line-height: 1.8;
+    line-height: 1.5;
   }
   .footer-wrap__logo {
     text-align: center;
@@ -1819,7 +1819,7 @@ input[name="name05"] {
   }
   .case-wrap__body__btn {
     width: 30%;
-    padding: 3%;
+    padding: 4%;
   }
   .case-wrap__body__btn a {
     text-align: center;
@@ -1849,7 +1849,7 @@ input[name="name05"] {
     width: 30%;
   }
   .form-wrap__block__btn button {
-    width: 30%; /* 横幅 */
+    width: 40%; /* 横幅 */
     height: 90px; /* 高さ */
     font-size: 24px; /* 文字サイズ */
     background-color: #fff; /* 背景色（例：青） */
@@ -1878,6 +1878,9 @@ input[name="name05"] {
   .case-wrap__body__table td {
     padding: 2%;
     font-size: 16px;
+  }
+  .sp-br {
+    display: inline;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1988,7 +1991,7 @@ input[name="name05"] {
   .about-wrap__body__list {
     background-color: #fff;
     text-align: left;
-    padding: 0 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     width: 90%;
     margin: 0 auto 0 auto;
   }
@@ -2479,7 +2482,7 @@ input[name="name05"] {
   .about-wrap__body__list {
     background-color: #fff;
     text-align: left;
-    padding: 0 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     width: 80%;
     margin: 20px auto 0 auto;
   }
@@ -2521,7 +2524,7 @@ input[name="name05"] {
     margin: 20px auto;
     background-color: #84711b;
     width: 65%;
-    padding: 15px;
+    padding: 20px;
     border-radius: 20px;
     cursor: pointer;
   }
@@ -2639,6 +2642,7 @@ input[name="name05"] {
     width: 100%;
     margin: 0;
     align-items: center;
+    justify-content: center;
   }
   .list__inner p {
     width: 80%;
