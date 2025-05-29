@@ -677,9 +677,10 @@ li {
   padding: 40px 0 40px 0;
 }
 .reason-wrap__body__block2__head {
+  width: 100%;
   text-align: center;
   margin-top: 20px;
-  font-size: 32px;
+  font-size: clamp(1.5rem, 1.3333rem + 0.8333vw, 2rem);
   color: #0f79c4;
   padding-bottom: 20px;
 }
@@ -690,7 +691,7 @@ li {
   text-align: center;
   font-size: 20px;
   padding-bottom: 20px;
-  line-height: 2;
+  line-height: 1.8;
 }
 .reason-wrap__body__block2__about {
   width: 70%;
@@ -1280,7 +1281,7 @@ a {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 .Q-wrap__body__block {
   width: 85%;
@@ -1332,6 +1333,9 @@ a {
 .Q-wrap__body__block__table__txt p {
   font-size: clamp(1rem, 0.9429rem + 0.3839vw, 1.25rem);
   padding: 20px;
+}
+.br {
+  display: none;
 }
 .form {
   background-image: url(../img/treatmentback.jpeg);
@@ -1659,7 +1663,10 @@ input[name="name05"] {
   .treatment-wrap__body__block__left2 {
     width: 80%;
   }
-
+  .treatment-wrap__body__block__left1__txt {
+    align-items: center;
+    line-height: 1.8;
+  }
   .treatment-wrap__body__block__left2__img {
     width: 100%;
     height: 310px;
@@ -1673,6 +1680,7 @@ input[name="name05"] {
     flex-direction: column;
     gap: 0;
     padding: 0;
+    width: 90%;
   }
   .gr-wrap__left__name {
     margin-bottom: 20px;
@@ -1698,10 +1706,10 @@ input[name="name05"] {
     border-radius: 8px; /* 任意：角を丸く */
   }
   .gr-wrap__left {
-    width: 80%;
+    width: 90%;
   }
   .contact-wrap__body {
-    width: 100%;
+    width: 90%;
   }
   .gr-wrap__right {
     width: 90%;
@@ -1717,7 +1725,7 @@ input[name="name05"] {
   }
   .gr-wrap__left__head p {
     width: 100%;
-    font-size: 24px;
+    font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
     color: #0f79c4;
     font-weight: bold;
     text-align: center;
@@ -1732,7 +1740,7 @@ input[name="name05"] {
     position: relative;
   }
   .gr-wrap__left__txt::before {
-    width: 90%;
+    width: 100%;
     content: "";
     position: absolute;
     inset: 0;
@@ -1741,16 +1749,13 @@ input[name="name05"] {
     z-index: -1; /* 背面へ */
   }
   .gr__under {
-    width: 90%;
+    width: 95%;
   }
   .treatment-wrap__body__block__left2__img img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* 切り抜きながらフィット（トリミング風） */
     display: block;
-  }
-  .Q-wrap__body__head {
-    gap: 20px;
   }
   .Q-wrap__body__head__block {
     font-size: 22px;
@@ -1765,6 +1770,7 @@ input[name="name05"] {
   }
   .reason-wrap__body__block1__txt {
     font-size: 20px;
+    line-height: 1.8;
   }
   .reason-wrap__body__block2__txt {
     font-size: 20px;
@@ -1778,6 +1784,10 @@ input[name="name05"] {
     margin: 0 auto;
     text-align: center;
     align-items: center;
+  }
+  .treatment-wrap__body__block__right2__txt {
+    align-items: center;
+    line-height: 1.8;
   }
   .footer-wrap__logo {
     text-align: center;
@@ -1808,7 +1818,7 @@ input[name="name05"] {
     font-size: 18px;
   }
   .case-wrap__body__btn {
-    width: 25%;
+    width: 30%;
     padding: 3%;
   }
   .case-wrap__body__btn a {
@@ -1839,7 +1849,7 @@ input[name="name05"] {
     width: 30%;
   }
   .form-wrap__block__btn button {
-    width: 25%; /* 横幅 */
+    width: 30%; /* 横幅 */
     height: 90px; /* 高さ */
     font-size: 24px; /* 文字サイズ */
     background-color: #fff; /* 背景色（例：青） */
@@ -1855,6 +1865,19 @@ input[name="name05"] {
   }
   .footer-wrap__body__right__table td {
     font-size: clamp(1.25rem, 0.8333rem + 0.8333vw, 1.5rem);
+  }
+}
+@media screen and (max-width: 800px) {
+  .br {
+    display: inline;
+  }
+  .case-wrap__body__table th {
+    padding: 2%;
+    font-size: 16px;
+  }
+  .case-wrap__body__table td {
+    padding: 2%;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -2624,5 +2647,8 @@ input[name="name05"] {
     width: 20%;
     text-align: center;
     margin-right: 1%;
+  }
+  .br {
+    display: none;
   }
 }
